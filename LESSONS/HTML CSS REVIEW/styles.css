@@ -1,0 +1,141 @@
+/* IMPORTING FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+/* VARIBALES */
+:root {
+  --color-green: #04cba4;
+  --color-dark: #2a3249;
+  --color-blue: #67b3f8;
+  --color-gray: #dad5cf;
+  --color-red: #ef4444;
+  --color-white: #ffffff;
+  --font-poppins: "Poppins", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-barlow: "Barlow", sans-serif;
+}
+/* BROWSER RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+}
+
+.card-container {
+  background-color: var(--color-green);
+  padding: 2rem 0;
+}
+.card {
+  background-color: var(--color-white);
+  width: 450px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* padding: 1rem; */
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+.card-footer {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  margin-top: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.icon-card {
+  color: var(--color-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: antiquewhite; */
+}
+.icon-card i {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+.icon-stats {
+  color: var(--color-white);
+}
+.card-button {
+  background-color: var(--color-blue);
+}
+.card-image {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--color-gray);
+}
+.card-title {
+  font-family: var(--font-barlow);
+  font-size: 2rem;
+  line-height: 22px;
+  padding: 1.3rem 0;
+}
+.card-text {
+  font-family: var(--font-nunito);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.card-header-title {
+  margin-left: 6rem;
+}
+.card-header-icon {
+  margin-right: 3rem;
+  background-color: var(--color-blue);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-white);
+}
+button,
+.card-button {
+  padding: 12px 43px;
+  border-radius: 10px;
+  color: var(--color-white);
+  cursor: pointer;
+  font-family: var(--font-nunito);
+  font-weight: 700;
+  font-size: 22px;
+  border: none;
+  box-shadow: 2px 3px var(--color-dark);
+}
+
+/* .box {
+  height: 100px;
+  width: 300px;
+} */
+/* .box-1 {
+  background-color: blue;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.box-2 {
+  background-color: red;
+} */
