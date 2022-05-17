@@ -1,0 +1,16 @@
+Javascript Functions exercises
+1. Write a JavaScript function to print the “Hello World” message
+Function `displayMessage()` prints “Hello World” string using console.log() function.
+
+2. Write a function that returns the square of a number
+Function `findSquare()` returns the square of the input number which is passed as an argument in the function call.
+
+3. Write a function to convert Celsius to Fahrenheit
+Function `calFahrenheit()` returns the converted Celsius value to Fahrenheit value based on the formula `(Celsius × 9/5) + 32 = Fahrenheit`
+
+4. Write a function to find the area of a given Rectangle
+Function `rectangleArea()` returns the rectangle area provided the width and height as the argument.
+
+5. Write a function to find the area and perimeter of a Circle
+Function `circleValues()` returns the perimeter and area of the circle provided the radius as an argument for the function call.
+
