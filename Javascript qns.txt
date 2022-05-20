@@ -14,3 +14,19 @@ Function `rectangleArea()` returns the rectangle area provided the width and hei
 5. Write a function to find the area and perimeter of a Circle
 Function `circleValues()` returns the perimeter and area of the circle provided the radius as an argument for the function call.
 
+6. Create a function that takes two numbers as arguments and returns their sum.
+
+7. Write a function that takes an integer minutes and converts it to seconds.
+8. Write a function that takes the base and height of a triangle and return its area.
+9. Fix the code in the code tab to pass this challenge (only syntax errors). Look at the example below to get an idea of what the function should do.
+eg cubes(3) ➞ 27
+function cubes(a) {
+	retunr a ** 3
+}
+10. Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
