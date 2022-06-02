@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* helper classes */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  padding: 1rem 3.5rem;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+}
+.rectangle {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-out;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.bottom-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+}
+.circle {
+  border-radius: 50%;
+}
+.triangle {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.bounce {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes mymove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
