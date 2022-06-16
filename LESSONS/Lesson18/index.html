@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      const x = 21.4;
+      let result = Math.round(x);
+      result = Math.ceil(x);
+      result = Math.floor(x);
+      result = Math.trunc(x);
+
+      const a = 2;
+      const b = 3;
+      result = Math.pow(a, b);
+      console.log(result);
+
+      function greeting() {
+        const clientName = "Jb";
+      }
+      // console.log(clientName);
+
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      const firstName = person.firstName;
+      const lastName = person.lastName;
+
+      const fullName = firstName + " " + " " + lastName;
+      console.log(fullName);
+      const images = [
+        {
+          title: "Aut id rem et.",
+          description:
+            "Molestiae saepe ut omnis quaerat quia et adipisci et. Eum ea dicta aut impedit. Aut aut perferendis vero illum totam culpa nihil.",
+          url: "http://placeimg.com/640/480/any",
+        },
+        {
+          title: "Accusantium est et est in.",
+          description:
+            "Nihil sed non officia aspernatur fugit corrupti. Distinctio rerum et nesciunt natus. Nam et ad ducimus et error perspiciatis possimus natus. Consequatur omnis nulla amet et enim rerum atque.",
+          url: "http://placeimg.com/640/480/any",
+        },
+        {
+          title: "Velit sed aut excepturi.",
+          description:
+            "Aut reiciendis fuga est vero sint cumque ut. Quia aut blanditiis consequatur eos. Ut fugit sunt veniam a itaque eos. Enim et hic adipisci saepe esse voluptas voluptas architecto.",
+          url: "http://placeimg.com/640/480/any",
+        },
+      ];
+      const arr = [1, { name: "Irad" }, { name: "John" }];
+      arr.map((item) => {
+        console.log(item);
+      });
+    </script>
+  </body>
+</html>
