@@ -1,0 +1,43 @@
+/* BROWSER RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .container {
+  gap: 2rem;
+} */
+.border {
+  width: 40vw;
+  height: 30vh;
+  border: 2px solid rgb(255, 162, 0);
+  margin-left: 37rem;
+  background-color: wheat;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.tabs {
+  font-weight: bold;
+  gap: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 8rem;
+}
+.css:hover {
+  width: 40px;
+  height: 20px;
+  background-color: rgb(255, 162, 0);
+  font-weight: bolder;
+}
+.html:hover {
+  width: 50px;
+  height: 20px;
+  background-color: rgb(255, 162, 0);
+  font-weight: bolder;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
