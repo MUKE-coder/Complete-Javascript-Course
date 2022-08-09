@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .btn {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .card {
+        padding: 1rem;
+      }
+      .modal {
+        background-color: blue;
+        padding: 2rem 3rem;
+        border-radius: 10px;
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <button data-number="1" class="btn btn-1">Button1</button>
+      <button data-number="2" class="btn btn-2">Button2</button>
+      <button data-number="3" class="btn btn-3">Button3</button>
+      <button data-number="4" class="btn btn-4">Button4</button>
+    </div>
+
+    <div class="modal">
+      <p class="">You have clicked Button <span class="btnIdentity">1</span></p>
+    </div>
+
+    <script>
+      // select all buttons
+      const btns = document.querySelectorAll(".btn");
+      const modal = document.querySelector(".modal");
+      let btnNum = document.querySelector(".btnIdentity");
+      // convert the nodelist (btns) into an array
+      btnsArray = Array.from(btns);
+      // From here we can apply array methods
+
+      btnsArray.forEach((btn) => {
+        console.log(btn.dataset.number);
+        btn.addEventListener("click", function () {
+          // add active class to the modal
+
+          modal.classList.add("active");
+          // if (btn.classList.contains("btn-1")) {
+          //   btnNum.textContent = 1;
+          // } else if (btn.classList.contains("btn-2")) {
+          //   btnNum.textContent = 2;
+          // } else if (btn.classList.contains("btn-3")) {
+          //   btnNum.textContent = 3;
+          // } else {
+          //   btnNum.textContent = 4;
+          // }
+          // Using dataset
+          if (btn.dataset.number == 1) {
+            btnNum.textContent = 1;
+          } else if (btn.dataset.number == 2) {
+            btnNum.textContent = 2;
+          } else if (btn.dataset.number == 3) {
+            btnNum.textContent = 3;
+          } else {
+            btnNum.textContent = 4;
+          }
+        });
+      });
+      console.log(btnNum.textContent);
+    </script>
+  </body>
+</html>
