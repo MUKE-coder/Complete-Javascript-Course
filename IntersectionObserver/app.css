@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  /* transition: all 1s linear; */
+}
+.in-view {
+  transform: none;
+  opacity: 1;
+}
+section {
+  color: white;
+  height: 500px;
+  width: 80vw;
+  margin-bottom: 10px;
+}
+.not-animated {
+  height: 50vh;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-red {
+  background-color: red;
+}
