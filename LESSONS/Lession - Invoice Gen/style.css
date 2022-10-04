@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.invoice-container,
+.form-container {
+  padding: 1rem 5rem;
+  width: 80vw;
+}
+input {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+header {
+  margin-bottom: 2rem;
+}
+button,
+.btn {
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  margin-top: 5rem;
+}
+.hidden {
+  display: none;
+  /* transform: translateY(-1000px); */
+}
+.mb-sm {
+  margin-bottom: 20px;
+}
+.gap-sm {
+  gap: 2rem;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.show {
+  display: block;
+}
