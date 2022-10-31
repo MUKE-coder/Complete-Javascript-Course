@@ -6,6 +6,9 @@
 body {
   padding: 2rem;
 }
+.error {
+  color: red;
+}
 .products {
   display: grid;
   gap: 2rem;
@@ -18,4 +21,22 @@ img {
   border: 1px solid black;
   padding: 1rem;
   text-align: center;
+}
+.spinner {
+  margin: 5rem auto;
+}
+.spinner svg {
+  width: 6rem;
+  height: 6rem;
+  color: brown;
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
