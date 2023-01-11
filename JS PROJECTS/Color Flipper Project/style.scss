@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Consolas", Courier, monospace;
+}
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.pallete {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin: 1rem;
+  border: 0;
+}
+p {
+  font-size: 25px;
+}
+#clipBoard {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+  svg {
+    width: 30px;
+    height: 30px;
+    color: black;
+  }
+}
+
+.alert {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 10%;
+  right: -100%;
+  background-color: #eee;
+  padding: 1rem 3rem;
+  color: rgb(23, 23, 23);
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid rgb(23, 126, 23);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  svg {
+    width: 30px;
+    height: 30px;
+    color: green;
+  }
+}

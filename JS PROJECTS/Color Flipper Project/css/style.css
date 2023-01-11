@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Consolas", Courier, monospace;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pallete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin: 1rem;
+  border: 0;
+}
+
+p {
+  font-size: 25px;
+}
+
+#clipBoard {
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+}
+#clipBoard svg {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+.alert {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 10%;
+  right: -100%;
+  background-color: #eee;
+  padding: 1rem 3rem;
+  color: rgb(23, 23, 23);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid rgb(23, 126, 23);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.alert svg {
+  width: 30px;
+  height: 30px;
+  color: green;
+}
